@@ -3,7 +3,7 @@ wget https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_e
 tar -xf node_exporter-1.2.2.linux-amd64.tar.gz
 rm -r node_exporter-1.2.2.linux-amd64*
 sudo useradd -rs /bin/false node_exporter
-sudo nano /etc/systemd/system/node_exporter.service
+touch /etc/systemd/system/node_exporter.service
 printf "
 [Unit]
 Description=Node Exporter
